@@ -1,0 +1,307 @@
+* {
+    margin:0;
+    padding:0;
+    outline:none
+}
+body {
+    min-width: 320px;
+    font-family: 'Open Sans', sans-serif;
+    color: #201b2d;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.content {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    right: 300px;
+    padding-bottom: 140px;
+    text-align: left;
+}
+
+
+
+.container-sm {
+    width: 70%;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+.cfs {
+    font-size: 100%;
+}
+hr{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.image-1 {
+    width: 350px;
+    height: 350px;
+    border: none;
+    padding-top: 50px;
+
+}
+.image-2 {
+    width: 90px;
+    height: 30px;
+    border: none;
+
+}
+
+.container-ms {
+    width: 1170px;
+    height: 300px;
+    color: white;
+    padding-right: 30%;
+    padding-left: 20%;
+    padding-top: 40px;
+    display: flex;
+
+}
+
+
+
+.cvt {
+    color: white;
+    text-align: center;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    background-color: #6495ED;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.btn-primary{
+
+    background-color: #FFD700;
+
+    color: black;
+    border: none;
+}
+
+.btn-primary:hover,
+
+.btn-primary:focus,
+
+.btn-primary:visited{
+
+    background-color: darkorange;
+
+    color: black;
+
+}
+.carb{
+    border: none;
+}
+
+.anime{
+
+}
+
+.carb1{
+    border: none;
+    margin-top: 100px;
+}
+
+.bd {
+    background-color: #DCDCDC;
+    height: 600px;
+    width: 100%;
+}
+
+.clw{
+    width: 50%;
+}
+.container-se {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.form-horizontal {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.bt {
+    width: 100%;
+}
+
+.fd {
+    height: 150px;
+    background-color: #6495ED;
+    color: white;
+}
+
+.container-footer {
+    padding-top: 6%;
+}
+
+.sp2 {
+    color: brown;
+    text-align: left;
+    padding-top: 5px;
+}
+.circle_content:hover .circle{
+    animation-play-state: running;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: #6495ED;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    animation-name: circle_blue;
+    animation-duration: 3s;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes circle_blue {
+    0%{
+        left: 0;
+    }
+    75%{
+        height: 65px;
+        width: 65px;
+    }
+    100%{
+        left: 700px;
+        border-radius: 0;
+        height: 65px;
+        width: 150px;
+        content: "Нажми на меня";
+    }
+}
+
+.animate__animated{
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.txt_2 {
+    display: none;
+}
+.pacman_content{
+    display: none;
+}
+
+.pacman {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: pacman_run;
+    animation-duration: 6s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    transition-timing-function: ease-in;
+}
+@keyframes pacman_run {
+    from { transform: translateX(-500px)}
+    to { transform: translateX(1200px)}
+}
+
+
+.tr_button_1{
+    box-shadow: 0 5px 0px #201b2d;
+    transition-duration: 0.5s;
+}
+
+.tr_button_1:hover {
+
+    box-shadow: 0 3px 0px #201b2d;
+}
+
+@media screen and (max-width:1200px)
+
+{
+
+    .container-ms{
+        width: 960px;
+    }
+
+}
+
+
+
+@media screen and (max-width:992px)
+
+{
+    .container-ms{
+        width: 720px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:768px)
+
+{
+
+    .container-ms {
+        width: 520px;
+
+    }
+    .col-2{
+        display: none;
+    }
+    .col-8{
+        width: 440px;
+    }
+    body{
+        width: 100%;
+    }
+
+}
+
+/* Адаптив */
+
+@media screen and (max-width:576px)
+
+{
+    .container-ms {
+        width: 100px;
+
+    }
+
+    body{
+        width: 100%;
+
+    }
+    .col-8 {
+        width: 280px;
+    }
+}
