@@ -124,7 +124,7 @@ form.onsubmit = function () {
     return false;
 }
 
-// Блоки Что вам необходимо
+// Блок
 let block = document.querySelector('.card-body')
 
 block.addEventListener('click', ()=>{
